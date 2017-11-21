@@ -14,6 +14,7 @@
 		39BC1C101FC300BE00E3791C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BC1C0F1FC300BE00E3791C /* Assets.xcassets */; };
 		39BC1C131FC300BE00E3791C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BC1C111FC300BE00E3791C /* LaunchScreen.storyboard */; };
 		39BC1C161FC300BE00E3791C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BC1C151FC300BE00E3791C /* main.m */; };
+		39BC1C1F1FC3014600E3791C /* UpdateVersionManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BC1C1E1FC3014500E3791C /* UpdateVersionManage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		39BC1C121FC300BE00E3791C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39BC1C141FC300BE00E3791C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39BC1C151FC300BE00E3791C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39BC1C1D1FC3014500E3791C /* UpdateVersionManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateVersionManage.h; sourceTree = "<group>"; };
+		39BC1C1E1FC3014500E3791C /* UpdateVersionManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateVersionManage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 		39BC1C021FC300BE00E3791C /* TXPVersionManage */ = {
 			isa = PBXGroup;
 			children = (
+				39BC1C1C1FC3014500E3791C /* UpdateVersionManage */,
 				39BC1C031FC300BE00E3791C /* AppDelegate.h */,
 				39BC1C041FC300BE00E3791C /* AppDelegate.m */,
 				39BC1C061FC300BE00E3791C /* ViewController.h */,
@@ -72,6 +76,15 @@
 				39BC1C0C1FC300BE00E3791C /* TXPVersionManage.xcdatamodeld */,
 			);
 			path = TXPVersionManage;
+			sourceTree = "<group>";
+		};
+		39BC1C1C1FC3014500E3791C /* UpdateVersionManage */ = {
+			isa = PBXGroup;
+			children = (
+				39BC1C1D1FC3014500E3791C /* UpdateVersionManage.h */,
+				39BC1C1E1FC3014500E3791C /* UpdateVersionManage.m */,
+			);
+			path = UpdateVersionManage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39BC1C081FC300BE00E3791C /* ViewController.m in Sources */,
+				39BC1C1F1FC3014600E3791C /* UpdateVersionManage.m in Sources */,
 				39BC1C0E1FC300BE00E3791C /* TXPVersionManage.xcdatamodeld in Sources */,
 				39BC1C161FC300BE00E3791C /* main.m in Sources */,
 				39BC1C051FC300BE00E3791C /* AppDelegate.m in Sources */,
@@ -284,6 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TXPVersionManage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = txx.com.www.TXPVersionManage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,6 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TXPVersionManage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = txx.com.www.TXPVersionManage;
 				PRODUCT_NAME = "$(TARGET_NAME)";

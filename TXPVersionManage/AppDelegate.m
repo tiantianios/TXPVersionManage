@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "UpdateVersionManage.h"
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [[ViewController alloc]init];
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
+    [UpdateVersionManage checkVersionInController:nil];
     return YES;
 }
 
@@ -35,6 +40,7 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    [UpdateVersionManage checkVersionInController:nil];
 }
 
 
